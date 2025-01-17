@@ -1,0 +1,25 @@
+{
+  "name": "unit-testing",
+  "version": "1.0.0",
+  "description": "This chapter covers the basics of unit testing a vanilla javascript program",
+  "main": "",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/josephkipkemoi"
+  },
+  "keywords": [
+    "Test",
+    "Driven",
+    "Development",
+    "Unit",
+    "Testing"
+  ],
+  "author": "Joseph Kipkemoi",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
