@@ -1,12 +1,16 @@
 What is Testing?
-
 Software testing is the process of evaluating and verifying that a software product or application does what it's supposed to do, 
-the benefits of good testing include preventing bugs and improving perfomance.
+explain:
+For instance, a HTML user input, you expect it to receive a certain type of input, for example, your name, or email address, you can
+add unit tests to verify that the data received is one that passes the test you put in place, for example, you  might be given a request from
+the backend engineer that a certain form input should send back the data in a certain format, this can be achieved early on with testing
 
-Testing our application is crucial to verify and validate the quality to ensure it meets user requirements.
+The benefits of good testing include preventing bugs and improving perfomance (in the long run, your application will run on production with near zero fault).
 
-In today's development environment, Software testing is most effective when its continuous, indicating that testing is started during the design, 
-continues as the software is built out, and even occurs when deployed into production.
+Why is Testing needed?
+Testing our application is crucial to verify and validate the quality of code we write, we also need to ensure it meets user requirements.
+
+We, as Front End Developers need to ensure that we test our applications to its entirety. Have a decent amount of test coverage, this will prevent bugs on production
 
 Continuous testing means that organizations don't have to wait for all the pieces to be deployed before testing can start.
 
@@ -14,47 +18,43 @@ Types of Software Testing?
 Code review: confirming that new and modified software is following an organization's coding standards and adheres to its best practises
 Integration testing: ensuring that software components or functions operate together
 Unit Testing: Validating that each software unit runs as expected, a unit is the smallest testable component of an application
-Function testing : checking functions by emulating business scenarious, based on function requirements
-Perfomance testing: Testing how the software runs under different workloads, load testing , for example, is used to evaluate perfomance under real-life load condition ( lighthouse can be used on Front End applications' browser)
-Regression testing - Checking whether new features break or degrade functionality
-Security testing : validating that your software is not open to hackers or other malicious types of vulnerabilities that might be exploited to deny access to your services or cause them to perfom incorrectly
-Usability testing: validating how well a customer can use a system or web application to complete a task
+Accessiblity Testing: Testing HTML elements meet recommended accesiblity standards
+End to End Testing:
+// Function testing : checking functions by emulating business scenarious, based on function requirements
+// Perfomance testing: Testing how the software runs under different workloads, load testing , for example, is used to evaluate perfomance under real-life load condition ( lighthouse can be used on Front End applications' browser)
+// Regression testing: Checking whether new features break or degrade functionality
+// Security testing : validating that your software is not open to hackers or other malicious types of vulnerabilities that might be exploited to deny access to your services or cause them to perfom incorrectly// 
+// Usability testing: validating how well a customer can use a system or web application to complete a task
 
 Why is Software Testing Important?
 Late delivery or software defects can damage a brand's reputation, which  leads to frustrated and lost customers
-In extreme cases, a bug or defect can degrade interconnected systems or cause serious malfunctions:
+In extreme cases, a bug or defect can degrade interconnected systems or cause serious malfunctions.
 
 Example: 
-Loop for business hack
+Picture you have been tasked with developing an e-commerce application and due to a javascript bug, you don't get accurate figures, costing either your business or the client
+lots of money, this can result in bad reputation and in worst cases, law-suits
+Loop for Business hack
 KCB MPesa withdrawal hack
-Consider Nissan having to recall over 1 million cars due to a software defect in the airbag sensor detectors, 
-or a software bug that caused the failure of a USD 1.2 billion military satellite launch.
-The numbers speak for themselves. Software failures in the US cost the economy USD 1.1 trillion in assets in 2016. What’s more, 
-they impacted 4.4 billion customers.
-
+Consider Nissan having to recall over 1 million cars due to a software defect in the airbag sensor detectors
 
 Software Testing Best Practices
-Software testing follows a common process
-Tasks or steps include defining the test environment, developing test cases wrtiting scripts analyzing test results and submitting defect reports
-Testing can be time consuming, manual testing or ad hoc testing might be enough for small builds, however for larger systems, 
-tools are frequently used to automate tasks.
-Automated testing helps teams implement different scenarios, test differentiatiors, and quickly get feedback on what works and what doesnt.
 A good testing approach encompasses the Application Programming Interface (API - which you write with nodejs or Django on python), user interface and system levels.
 The more tests that are automcated and run early, the better.
 
 Red, Green, Refactor
-Red, Green, Refactor is a phase used to describe the three phases of Test-Driven development
+Red, Green, Refactor is a phase used to describe the three phases of Test-Driven Development.
+
 Red 
 Write a test that will fail
 This test defines the expected behaviour of the system
-This phase helps developers focus on what they want to develop
+This phase will help you focus on what they want to develop
 
 Green
 Write the code to make the test pass
-This phase helps developers focus on how to make their tests pass
+This phase will help you focus on how to make their tests pass
 
 Refactor
 Improve the existing code to make it well structured
-This phase helps developers focus on how to improve the implementation
+This phase will help you focus on how to improve the implementation
 
 The red, green, refactor cycle is repeated for each new feature or behaviour
